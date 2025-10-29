@@ -20,7 +20,23 @@ document.querySelectorAll('.program-card, .audience-card, .result-card, .success
 });
 
 function registerRedirect() {
-    if (confirm("Переход на форму регистрации в WhatsApp-группу. Продолжить?")) {
-    window.location.href = "https://chat.whatsapp.com/KwPH71LaduF1tFXbquIXjc";
-    }
+  document.getElementById("registerModal").style.display = "flex";
 }
+
+function closeModal() {
+  document.getElementById("registerModal").style.display = "none";
+}
+
+function submitRegistration() {
+  const name = document.getElementById("userName").value.trim();
+  const phone = document.getElementById("userPhone").value.trim();
+
+  if (!name || !phone) {
+    alert("Пожалуйста, введите имя и номер телефона.");
+    return;
+  }
+
+  closeModal();
+  window.location.href = "https://chat.whatsapp.com/KwPH71LaduF1tFXbquIXjc";
+}
+

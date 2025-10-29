@@ -222,6 +222,17 @@
             </div>
         </div>
     </footer>
+
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Регистрация на курс</h2>
+            <input type="text" id="userName" placeholder="Ваше имя" required>
+            <input type="tel" id="userPhone" placeholder="Номер телефона" required>
+            <button class="btn-primary" onclick="submitRegistration()">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+        </div>
+    </div>
+
 </body>
 
 </html>

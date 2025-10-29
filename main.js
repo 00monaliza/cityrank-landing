@@ -18,3 +18,9 @@ document.querySelectorAll('.program-card, .audience-card, .result-card, .success
     el.style.transition = 'all 0.6s ease';
     observer.observe(el);
 });
+
+function registerRedirect() {
+  if (confirm("Переход на форму регистрации в WhatsApp-группу. Продолжить?")) {
+    window.location.href = "https://chat.whatsapp.com/KwPH71LaduF1tFXbquIXjc";
+  }
+}

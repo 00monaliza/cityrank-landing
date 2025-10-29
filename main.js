@@ -20,7 +20,7 @@ document.querySelectorAll('.program-card, .audience-card, .result-card, .success
 });
 
 function registerRedirect() {
-  if (confirm("Переход на форму регистрации в WhatsApp-группу. Продолжить?")) {
+    if (confirm("Переход на форму регистрации в WhatsApp-группу. Продолжить?")) {
     window.location.href = "https://chat.whatsapp.com/KwPH71LaduF1tFXbquIXjc";
-  }
+    }
 }

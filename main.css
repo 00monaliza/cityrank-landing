@@ -217,8 +217,7 @@ header {
 
 .program-card,
 .audience-card,
-.result-card,
-.success-card {
+.result-card{
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -228,8 +227,7 @@ header {
 }
 .program-card:hover,
 .audience-card:hover,
-.result-card:hover,
-.success-card:hover {
+.result-card:hover{
   transform: translateY(-8px);
   border-color: rgba(102, 126, 234, 0.5);
   box-shadow: 0 20px 60px rgba(102, 126, 234, 0.2);
@@ -603,4 +601,41 @@ footer {
     .author-list-compact ul li {
         font-size: 14px;
     }
+}
+
+.success-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.success-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 35px;
+  transition: all 0.3s ease;
+}
+
+.success-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(102, 126, 234, 0.5);
+  box-shadow: 0 20px 60px rgba(102, 126, 234, 0.2);
+}
+
+.success-name {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #667eea;
+}
+
+.income {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 20px;
+  font-weight: 700;
+  color: #00ff88;
 }

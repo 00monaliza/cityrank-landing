@@ -99,6 +99,14 @@ header {
   -webkit-text-fill-color: transparent;
   line-height: 1.1;
 }
+
+.hero-photo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
 .hero-subtitle {
   font-size: 22px;
   line-height: 1.6;
@@ -180,6 +188,34 @@ header {
 }
 .hero-instructor-avatar:hover .hero-instructor-photo {
   transform: scale(1.06);
+}
+
+.hero-text-section {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  text-align: left;
+  padding: 0 20px;
+}
+
+.hero-text-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.hero-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hero-list li {
+  font-size: 20px;
+  line-height: 1.8;
+  color: #d0d0d0;
+  margin-bottom: 12px;
+  padding-left: 0;
 }
 
 /* Остальные секции */

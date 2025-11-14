@@ -240,17 +240,6 @@ header {
   font-weight: 700;
 }
 
-.success-name {
-  display: inline-block; 
-  padding: 8px 20px;
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  border-radius: 50px;
-  font-size: 14px;
-  font-weight: 700;
-  color: white;
-  margin-bottom: 20px; 
-}
-
 /* CTA */
 .cta-section {
   text-align: center;

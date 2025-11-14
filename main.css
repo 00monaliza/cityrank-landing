@@ -617,3 +617,38 @@ footer {
   box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
   transition: all 0,4s ease
 }
+
+.instructor-avatar-square {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(102, 126, 234, 0.4);
+}
+
+.instructor-photo-square {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 4px solid #0a0a0f;
+  transition: all 0.4s ease;
+}
+
+.instructor-avatar-square:hover .instructor-photo-square {
+    transform: scale(1.03);
+}
+
+
+@media (max-width: 768px) {
+    .instructor-avatar-square {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .instructor-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .instructor-info {
+        margin-top: 20px;
+    }
+}

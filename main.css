@@ -190,6 +190,16 @@ header {
   transform: scale(1.06);
 }
 
+.hero-author-name {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 1.2;
+  text-align: center;
+  background: linear-gradient(135deg, #ffffff, #c8c8c8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .hero-text-section {
   max-width: 700px;
   margin: 0 auto 50px;

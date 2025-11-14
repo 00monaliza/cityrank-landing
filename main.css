@@ -114,7 +114,7 @@ header {
 }
 .btn-primary,
 .btn-secondary {
-  padding: 24px 60px;
+  padding: 20px 50px;
   border: none;
   border-radius: 16px;
   font-size: 18px;
@@ -349,29 +349,24 @@ footer {
   font-size: 16px;
 }
 
-/* === ИСПРАВЛЯЕМ ВСЕ КАРТОЧКИ: программа, для кого, результат === */
-
-/* Добавляем нормальные отступы между карточками */
 .program-grid,
 .audience-grid,
 .results-grid,
 .success-grid {
-    gap: 32px !important;        /* было 30px → стало чуть больше и красивее */
+    gap: 32px !important;        
     margin: 0 auto;
     max-width: 1240px;
     padding: 0 20px;
 }
 
-/* Убираем лишнее пустое место внутри карточек */
 .program-card,
 .audience-card,
 .result-card,
 .success-card {
-    padding: 32px 28px !important;   /* было 35–40px → стало компактнее */
+    padding: 32px 28px !important; 
     text-align: left;
 }
 
-/* Восстанавливаем эмодзи + делаем их красивыми и большими */
 .audience-icon,
 .result-icon {
     font-size: 48px !important;
@@ -379,20 +374,17 @@ footer {
     display: block;
 }
 
-/* Специально для секции "Для кого" — возвращаем настоящие эмодзи */
 .audience-card:nth-child(1) .audience-icon::before { content: "💼 "; }
 .audience-card:nth-child(2) .audience-icon::before { content: "👶 "; }
 .audience-card:nth-child(3) .audience-icon::before { content: "📈 "; }
 .audience-card:nth-child(4) .audience-icon::before { content: "💻 "; }
 .audience-card:nth-child(5) .audience-icon::before { content: "🚀 "; }
 
-/* Специально для секции "Результат после курса" */
 .result-card:nth-child(1) .result-icon::before { content: "💰 "; }
 .result-card:nth-child(2) .result-icon::before { content: "🤖 "; }
 .result-card:nth-child(3) .result-icon::before { content: "🎨 "; }
 .result-card:nth-child(4) .result-icon::before { content: "📊 "; }
 
-/* Делаем бейджи "День 1/2/3" как на скриншоте — овальные, фиолетовые */
 .day-badge {
     display: inline-block;
     background: linear-gradient(135deg, #8b6aff, #a855f7) !important;
@@ -405,7 +397,6 @@ footer {
     box-shadow: 0 4px 15px rgba(139, 106, 255, 0.3);
 }
 
-/* Чуть поджимаем заголовки внутри карточек */
 .program-card h3,
 .audience-card h4,
 .result-card h4 {
@@ -421,7 +412,6 @@ footer {
     color: #ddd;
 }
 
-/* На мобильных — всё в колонку, но с нормальными отступами */
 @media (max-width: 768px) {
     .program-grid,
     .audience-grid,
@@ -440,4 +430,8 @@ footer {
     .result-icon {
         font-size: 42px !important;
     }
+}
+
+.cta-section .btn-primary {
+  margin-top: 40px;  
 }

@@ -67,7 +67,7 @@ header {
 
 /* Hero */
 .hero {
-  padding: 50px 0 80px;
+  padding: 20px 0 80px;
   text-align: center;
 }
 .hero-badge {
@@ -240,6 +240,17 @@ header {
   border-radius: 50px;
   font-size: 14px;
   font-weight: 700;
+}
+
+.success-name {
+  display: inline-block; 
+  padding: 8px 20px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 20px; 
 }
 
 /* CTA */

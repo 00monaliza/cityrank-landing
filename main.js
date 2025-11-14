@@ -1,5 +1,13 @@
 function scrollToCTA() {
     document.getElementById('cta').scrollIntoView({ behavior: 'smooth' });
+    
+    // Отслеживаем клик на кнопку CTA
+    if (typeof fbq !== 'undefined') {
+        fbq('track', 'ViewContent', {
+            content_name: 'CTA Section',
+            content_category: 'Registration Interest'
+        });
+    }
 }
 
 // Smooth scroll reveal animation
@@ -21,6 +29,11 @@ document.querySelectorAll('.program-card, .audience-card, .result-card, .success
 
 function registerRedirect() {
   document.getElementById("registerModal").style.display = "flex";
+  
+  // Отслеживаем открытие формы регистрации
+  if (typeof fbq !== 'undefined') {
+    fbq('track', 'Lead');
+  }
 }
 
 function closeModal() {
@@ -36,7 +49,11 @@ function submitRegistration() {
     return;
   }
 
+  // Отслеживаем успешную регистрацию
+  if (typeof fbq !== 'undefined') {
+    fbq('track', 'CompleteRegistration');
+  }
+
   closeModal();
   window.location.href = "https://chat.whatsapp.com/KwPH71LaduF1tFXbquIXjc";
 }
-

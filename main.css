@@ -628,3 +628,14 @@ footer {
   font-weight: 700;
   color: #00ff88;
 }
+
+.footer-link {
+    color: #667eea;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.footer-link:hover {
+    color: #8b9cff;
+    text-decoration: none;
+}

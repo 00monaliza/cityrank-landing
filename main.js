@@ -1,13 +1,13 @@
 function scrollToCTA() {
-  document.getElementById('cta').scrollIntoView({ behavior: 'smooth' });
+  // document.getElementById('cta').scrollIntoView({ behavior: 'smooth' });
 
-  // Отслеживаем клик на кнопку CTA
-  if (typeof fbq !== 'undefined') {
-    fbq('track', 'ViewContent', {
-      content_name: 'CTA Section',
-      content_category: 'Registration Interest'
-    });
-  }
+  // // Отслеживаем клик на кнопку CTA
+  // if (typeof fbq !== 'undefined') {
+  //   fbq('track', 'ViewContent', {
+  //     content_name: 'CTA Section',
+  //     content_category: 'Registration Interest'
+  //   });
+  // }
 
   const name = document.getElementById("userName").value.trim();
   const phone = document.getElementById("userPhone").value.trim();

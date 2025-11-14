@@ -613,7 +613,7 @@ footer {
 }
 
 /* === ГЕРОЙСКАЯ ФОТОГРАФИЯ ПО ЦЕНТРУ === */
-.hero-instructor-wrapper {
+.instructor-card {
   display: flex;
   justify-content: center;
   margin: 50px 0 40px;

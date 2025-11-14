@@ -441,6 +441,14 @@ footer {
     .result-icon {
         font-size: 42px !important;
     }
+    .author-avatar-compact {
+        width: 220px;
+        height: 220px;
+    }
+    
+    .author-name-compact {
+        font-size: 32px;
+    }
 }
 
 .cta-section .btn-primary {
@@ -448,73 +456,151 @@ footer {
 }
 
 .author-section {
-    padding: 100px 0;
-    background: rgba(255, 255, 255, 0.02);
+    padding: 80px 0;
 }
 
-.author-card {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.03);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+.author-card-compact {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    background: rgba(20, 20, 40, 0.6);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(102, 126, 234, 0.3);
     border-radius: 30px;
-    padding: 60px;
-    position: relative;
+    padding: 50px 40px;
 }
 
-.photo-badge {
-    position: absolute;
-    top: -20px;
-    right: 20px;
-    background: linear-gradient(135deg, #ff3366, #ff6b6b);
-    color: white;
-    padding: 10px 20px;
-    border-radius: 50px;
-    font-size: 12px;
-    font-weight: 700;
-    z-index: 10;
-    box-shadow: 0 4px 15px rgba(255, 51, 102, 0.4);
-}
-
-.author-avatar {
-    width: 400px;
-    height: 400px;
-    padding: 15px;
+/* Фото */
+.author-avatar-compact {
+    width: 320px;
+    height: 320px;
+    margin: 0 auto 40px;
+    padding: 12px;
     background: linear-gradient(135deg, #4a5568, #667eea);
     border-radius: 50%;
-    box-shadow: 0 30px 80px rgba(102, 126, 234, 0.4);
+    box-shadow: 0 20px 60px rgba(102, 126, 234, 0.4);
     position: relative;
-    transition: all 0.5s;
+    transition: all 0.4s;
 }
 
-.author-avatar::before {
+.author-avatar-compact::before {
     content: "";
     position: absolute;
-    inset: -25px;
-    background: linear-gradient(135deg, #667eea50, #764ba250);
+    inset: -20px;
+    background: linear-gradient(135deg, #667eea40, #764ba240);
     border-radius: 50%;
-    filter: blur(40px);
+    filter: blur(35px);
     z-index: -1;
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
-.author-photo {
+.author-photo-compact {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid rgba(255, 255, 255, 0.1);
-    transition: transform 0.5s;
+    border: 4px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.4s;
 }
 
-.author-avatar:hover {
-    transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 40px 100px rgba(102, 126, 234, 0.6);
+.author-avatar-compact:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 30px 80px rgba(102, 126, 234, 0.6);
 }
 
-.author-avatar:hover .author-photo {
+.author-avatar-compact:hover .author-photo-compact {
     transform: scale(1.05);
+}
+
+/* Информация */
+.author-info-compact {
+    text-align: center;
+}
+
+.author-name-compact {
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    line-height: 1.1;
+    background: linear-gradient(135deg, #ffffff, #c8c8c8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.author-subtitle-compact {
+    font-size: 18px;
+    font-weight: 600;
+    color: #e0e0e0;
+    margin-bottom: 15px;
+}
+
+.author-experience-compact {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #b0b0b0;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.author-list-compact {
+    text-align: left;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.author-list-compact p {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.author-list-compact ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.author-list-compact ul li {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #d0d0d0;
+    padding: 5px 0;
+}
+
+/* Мобильная адаптация для автора */
+@media (max-width: 768px) {
+    .author-card-compact {
+        padding: 40px 30px;
+        max-width: 90%;
+    }
+    
+    .author-avatar-compact {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 30px;
+    }
+    
+    .author-avatar-compact::before {
+        inset: -15px;
+        filter: blur(25px);
+    }
+    
+    .author-name-compact {
+        font-size: 36px;
+    }
+    
+    .author-subtitle-compact {
+        font-size: 16px;
+    }
+    
+    .author-experience-compact {
+        font-size: 15px;
+    }
+    
+    .author-list-compact ul li {
+        font-size: 14px;
+    }
 }

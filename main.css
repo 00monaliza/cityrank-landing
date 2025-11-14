@@ -446,3 +446,21 @@ footer {
 .cta-section .btn-primary {
   margin-top: 40px;  
 }
+
+.author-section {
+    padding: 100px 0;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.author-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    padding: 60px;
+    position: relative;
+}

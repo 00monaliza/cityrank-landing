@@ -147,8 +147,8 @@ header {
   margin: 70px 0 60px;
 }
 .hero-instructor-avatar {
-  width: 380px;
-  height: 470px;
+  width: 480px;
+  height: 595px;
   padding: 12px;
   background: linear-gradient(135deg, #1e274e, #764ba2);
   border-radius: 50px;
@@ -278,8 +278,8 @@ footer {
     font-size: 19px;
   }
   .hero-instructor-avatar {
-    width: 315px;
-    height: 382px;
+    width: 369px;
+    height: 445px;
   }
   .hero-instructor-avatar::before {
     inset: -15px;
